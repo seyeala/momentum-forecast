@@ -5,11 +5,14 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "momentum-forecast"
 version = "0.1.0"
-description = "Momentum-line forecasting formulas and fitting utilities."
+description = "Momentum-line forecasting formulas and empirical fitting utilities."
 readme = "README.md"
 requires-python = ">=3.11"
-license = { text = "MIT" }
+license = { file = "LICENSE" }
 authors = [{ name = "Momentum Forecast Contributors" }]
+
+[project.optional-dependencies]
+dev = ["pytest"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
