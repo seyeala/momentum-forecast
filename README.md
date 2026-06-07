@@ -2,7 +2,21 @@
 
 Momentum Forecast is a small Python package for the deterministic formula layer of momentum-line forecasting.  The first phase focuses on log-return units, cost accounting, Gaussian continuation probabilities, signal-to-noise scores, Brownian channel lifetime, constant-hazard regime lifetime, and AR(1) persistence.
 
-The package intentionally separates **formula modules** from later **statistical fitting**, walk-forward validation, and strategy backtesting.
+The package intentionally separates **formula modules** and **statistical fitting utilities** from later walk-forward validation and strategy backtesting.
+
+## Current status and real-data readiness
+
+The package includes deterministic Phase 1 formula modules and Phase 2 fitting utilities for estimating formula inputs from arrays. It does **not** fetch market data, clean vendor files, choose trades, optimize thresholds, calibrate probabilities, or run full backtests. Before using actual market data, clean and align inputs outside the package, then treat fitted values as in-sample estimates unless they are evaluated out of sample.
+
+### Data and unit assumptions
+
+- Prices must be positive, adjusted price levels when converted to log prices.
+- Returns should be per-bar log returns in chronological order.
+- Drift, volatility, variance, costs, and horizons must use compatible per-bar units.
+- Costs should be supplied in return units and should include every component relevant to the intended trade simulation.
+- Rolling fits are endpoint-aligned and use only observations in their current window.
+
+See [`docs/phase2_usage.md`](docs/phase2_usage.md) for fitting examples and fit-to-formula composition.
 
 ## Install for local development
 
@@ -97,4 +111,20 @@ from momentum_forecast import ar1_expected_cumulative_return, ar1_half_life
 
 expected_return = ar1_expected_cumulative_return(current_return=0.001, phi=0.6, horizon=5)
 half_life = ar1_half_life(0.6)
+```
+
+## Fitting formula inputs
+
+```python
+from momentum_forecast.fitting import fit_estimated_drift_inputs, estimated_drift_probability_from_fits
+
+returns = [0.001, 0.002, -0.001, 0.003, 0.002]
+drift_fit, volatility_fit = fit_estimated_drift_inputs(returns)
+probability = estimated_drift_probability_from_fits(
+    drift_fit,
+    volatility_fit,
+    horizon=5,
+    cost=0.0005,
+    side="long",
+)
 ```
