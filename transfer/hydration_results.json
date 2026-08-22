@@ -8,7 +8,7 @@
     "bytes": 1132189,
     "http_status": 200,
     "content_type": "text/html",
-    "downloaded_at_utc": "2026-08-22T00:55:38Z"
+    "downloaded_at_utc": "2026-08-22T00:59:38Z"
   },
   {
     "ticker": "NVDA",
@@ -19,7 +19,7 @@
     "bytes": 1349423,
     "http_status": 200,
     "content_type": "text/html",
-    "downloaded_at_utc": "2026-08-22T00:55:38Z"
+    "downloaded_at_utc": "2026-08-22T00:59:38Z"
   },
   {
     "ticker": "AAPL",
@@ -30,7 +30,7 @@
     "bytes": 765973,
     "http_status": 200,
     "content_type": "text/html",
-    "downloaded_at_utc": "2026-08-22T00:55:38Z"
+    "downloaded_at_utc": "2026-08-22T00:59:38Z"
   },
   {
     "ticker": "AAPL",
@@ -41,7 +41,7 @@
     "bytes": 999810,
     "http_status": 200,
     "content_type": "text/html",
-    "downloaded_at_utc": "2026-08-22T00:55:39Z"
+    "downloaded_at_utc": "2026-08-22T00:59:39Z"
   },
   {
     "ticker": "GOOGL",
@@ -52,7 +52,7 @@
     "bytes": 1714713,
     "http_status": 200,
     "content_type": "text/html",
-    "downloaded_at_utc": "2026-08-22T00:55:39Z"
+    "downloaded_at_utc": "2026-08-22T00:59:39Z"
   },
   {
     "ticker": "GOOGL",
@@ -63,6 +63,6 @@
     "bytes": 2464133,
     "http_status": 200,
     "content_type": "text/html",
-    "downloaded_at_utc": "2026-08-22T00:55:39Z"
+    "downloaded_at_utc": "2026-08-22T00:59:39Z"
   }
 ]
