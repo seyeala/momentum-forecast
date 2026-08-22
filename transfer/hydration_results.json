@@ -1,0 +1,68 @@
+[
+  {
+    "ticker": "NVDA",
+    "period": "Q1",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000116/nvda-20250427.htm",
+    "name": "FY2026_Q1_10-Q_2025-04-27_2025-05-28_0001045810-25-000116.htm",
+    "sha256": "9f71aa343f38059e3e99cc1c37d97efee9971f4e3fd33377e363064c3a0168f4",
+    "bytes": 1132189,
+    "http_status": 200,
+    "content_type": "text/html",
+    "downloaded_at_utc": "2026-08-22T00:55:31Z"
+  },
+  {
+    "ticker": "NVDA",
+    "period": "Q2",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000209/nvda-20250727.htm",
+    "name": "FY2026_Q2_10-Q_2025-07-27_2025-08-27_0001045810-25-000209.htm",
+    "sha256": "df1074c0b522e2c35d75a5f3e8d5aa0f39504059c935021f7e84f5a3f0d08d73",
+    "bytes": 1349423,
+    "http_status": 200,
+    "content_type": "text/html",
+    "downloaded_at_utc": "2026-08-22T00:55:31Z"
+  },
+  {
+    "ticker": "AAPL",
+    "period": "Q1",
+    "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000006/aapl-20251227.htm",
+    "name": "FY2026_Q1_10-Q_2025-12-27_2026-01-30_0000320193-26-000006.htm",
+    "sha256": "3a3d9336a924488440e83b811ba354f654738cc822b6eb69ed6063e8cf348542",
+    "bytes": 765973,
+    "http_status": 200,
+    "content_type": "text/html",
+    "downloaded_at_utc": "2026-08-22T00:55:31Z"
+  },
+  {
+    "ticker": "AAPL",
+    "period": "Q2",
+    "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000013/aapl-20260328.htm",
+    "name": "FY2026_Q2_10-Q_2026-03-28_2026-05-01_0000320193-26-000013.htm",
+    "sha256": "bb90060d61a273e51b5a472d65ae15d8b51bfd037ddf91e559f9d9adfe2a0228",
+    "bytes": 999810,
+    "http_status": 200,
+    "content_type": "text/html",
+    "downloaded_at_utc": "2026-08-22T00:55:32Z"
+  },
+  {
+    "ticker": "GOOGL",
+    "period": "Q1",
+    "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/goog-20260331.htm",
+    "name": "FY2026_Q1_10-Q_2026-03-31_2026-04-30_0001652044-26-000048.htm",
+    "sha256": "2ff47ad277068104a8b165a86c897fa3f258546ee7c4a3aa354fa87d3cb0bd02",
+    "bytes": 1714713,
+    "http_status": 200,
+    "content_type": "text/html",
+    "downloaded_at_utc": "2026-08-22T00:55:32Z"
+  },
+  {
+    "ticker": "GOOGL",
+    "period": "Q2",
+    "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+    "name": "FY2026_Q2_10-Q_2026-06-30_2026-07-23_0001652044-26-000071.htm",
+    "sha256": "fecfbc2683f630380b17937278ce3745eca150eb90e21a945fd6b78fe19728c7",
+    "bytes": 2464133,
+    "http_status": 200,
+    "content_type": "text/html",
+    "downloaded_at_utc": "2026-08-22T00:55:32Z"
+  }
+]
