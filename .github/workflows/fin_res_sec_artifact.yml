@@ -1,0 +1,27 @@
+name: Fin_res temporary SEC artifact
+
+on:
+  push:
+    branches: [fin-res-sec-transfer-20260821]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  upload:
+    if: ${{ !contains(github.event.head_commit.message || '', '[skip ci]') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fin-res-sec-transfer-20260821
+          fetch-depth: 1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fin-res-sec-hydrated-six
+          path: transfer/fin_res_sec_hydrated_6.tar.xz
+          compression-level: 0
+          if-no-files-found: error
+          retention-days: 1
