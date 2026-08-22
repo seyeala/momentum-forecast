@@ -1,0 +1,29 @@
+name: Fin_res temporary artifact transfer
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fin-res-sec-transfer-20260821
+          fetch-depth: 1
+      - name: Verify transfer bundle
+        run: sha256sum -c transfer/fin_res_sec_hydrated_6.tar.xz.sha256
+      - name: Upload transfer bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: fin-res-sec-hydrated-six
+          path: transfer/fin_res_sec_hydrated_6.tar.xz
+          compression-level: 0
+          if-no-files-found: error
+          retention-days: 1
